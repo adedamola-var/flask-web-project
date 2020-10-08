@@ -1,0 +1,661 @@
+{% extends "amebo.html" %}
+{% block content %}
+<style>
+.facts{
+	text-align: center;
+	transform: translate(0%,2%);
+	letter-spacing: 3px;
+	font-family: century gothic;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	right: 50;
+
+}
+</style>
+<div class="facts">
+   <p><h3 style="color: red">September 2020</h3>
+<h4 style="color: blue">Saturday 12th September</h4>
+<p>Eibar	
+15:00
+Celta Vigo	
+Home	Away <br>
+Granada	
+17:30
+Athletic Bilbao	
+Home	Away<br>
+Cadiz	
+20:00
+Osasuna	
+Home	Away </p><br>
+Sunday 13th September
+<p>Alaves	
+13:00
+Real Betis	
+Home	Away <br>
+Real Valladolid	
+15:00
+Real Sociedad	
+Home	Away<br>
+Barcelona	
+P	P	Elche	
+Postponed : Other<br>
+Real Madrid	
+P	P	Getafe	
+Postponed : Other<br>
+Villarreal	
+17:30
+SD Huesca	
+Home	Away<br>
+Valencia	
+20:00
+Levante	
+Home Away <br></p>
+<p style="color: blue">Friday 18th September</p><br>
+<p>Getafe	
+20:00
+Osasuna	<br>
+Saturday 19th September<br>
+Villarreal	
+15:00
+Eibar	
+Celta Vigo	
+20:00
+Valencia	<br>
+Sunday 20th September<br>
+SD Huesca	
+15:00
+Cadiz	<br>
+Levante	
+P	P	Atletico Madrid	
+Postponed : Other<br>
+Sevilla	
+P	P	Elche	
+Postponed : Other<br>
+Granada	
+17:30
+Alaves	<br>
+Real Sociedad	
+20:00
+Real Madrid	<br>
+Monday 21st September<br>
+Real Betis	
+20:00
+Real Valladolid	<br>
+Sunday 27th September<br>
+Alaves	
+16:00
+Getafe<br>	
+Atletico Madrid	
+16:00
+Granada	<br>
+Barcelona	
+16:00
+Villarreal	<br>
+Cadiz	
+16:00
+Sevilla	<br>
+Eibar	
+16:00
+Athletic Bilbao	<br>
+Elche	
+16:00
+Real Sociedad<br>	
+Osasuna	
+16:00
+Levante	<br>
+Real Betis	
+16:00
+Real Madrid	<br>
+Real Valladolid	
+16:00
+Celta Vigo	<br>
+Valencia	
+16:00
+SD Huesca</p>	<br>
+<p style="color: blue">Wednesday 30th September</p><br>
+<p>Athletic Bilbao	
+20:00
+Cadiz	<br>
+Celta Vigo	
+20:00
+Barcelona	<br>
+Eibar	
+20:00
+Elche	<br>
+Getafe	
+20:00
+Real Betis <br>	
+Granada	
+20:00
+Osasuna	<br>
+Real Madrid	
+20:00
+Real Valladolid	<br>
+Real Sociedad	
+20:00
+Valencia	<br>
+SD Huesca	
+20:00
+Atletico Madrid	<br>
+Sevilla	
+20:00
+Levante	<br>
+Villarreal	
+20:00
+Alaves</p>	<br>
+<h3 style="color: red">October 2020 </h3> <br>
+<p style="color: blue">Sunday 4th October</p><br>
+<p>Alaves	
+16:00
+Athletic Bilbao	<br>
+Atletico Madrid	
+16:00
+Villarreal	<br>
+Barcelona	
+16:00
+Sevilla	<br>
+Cadiz	
+16:00
+Granada	<br>
+Elche	
+16:00
+SD Huesca <br>	
+Levante	
+16:00
+Real Madrid	<br>
+Osasuna	
+16:00
+Celta Vigo	<br>
+Real Sociedad	
+16:00
+Getafe	<br>
+Real Valladolid	
+16:00
+Eibar	<br>
+Valencia	
+16:00
+Real Betis</p> <br>	
+<p style="color: blue">Sunday 18th October</p> <br>
+<p>Alaves	
+16:00
+Elche	<br>
+Athletic Bilbao	
+16:00
+Levante	<br>
+Celta Vigo	
+16:00
+Atletico Madrid <br>	
+Eibar	
+16:00
+Osasuna	<br>
+Getafe	
+16:00
+Barcelona	<br>
+Granada	
+16:00
+Sevilla	<br>
+Real Betis	
+16:00
+Real Sociedad <br>	
+Real Madrid	
+16:00
+Cadiz	<br>
+SD Huesca	
+16:00
+Real Valladolid	<br>
+Villarreal	
+16:00
+Valencia</p>  <br>
+<p style="color: blue">Sunday 25th October</p> <br>
+<p>Atletico Madrid	
+16:00
+Real Betis	<br>
+Barcelona	
+16:00
+Real Madrid	<br>
+Cadiz	
+16:00
+Villarreal	<br>
+Elche	
+16:00
+Valencia	<br>
+Getafe	
+16:00
+Granada	<br>
+Levante	
+16:00
+Celta Vigo <br>	
+Osasuna	
+16:00
+Athletic Bilbao	<br>
+Real Sociedad	
+16:00
+SD Huesca	<br>
+Real Valladolid	
+16:00
+Alaves	<br>
+Sevilla	
+16:00
+Eibar</p>	<br>
+<h3 style="color: red">November 2020</h3> <br>
+<p style="color: blue">Sunday 1st November</p> <br>
+<p>Alaves	
+16:00
+Barcelona <br>	
+Athletic Bilbao	
+16:00
+Sevilla	<br>
+Celta Vigo	
+16:00
+Real Sociedad <br>	
+Eibar	
+16:00
+Cadiz	<br>
+Granada	
+16:00
+Levante	<br>
+Osasuna	
+16:00
+Atletico Madrid	<br>
+Real Betis	
+16:00
+Elche	<br>
+Real Madrid	
+16:00
+SD Huesca <br>	
+Valencia	
+16:00
+Getafe	<br>
+Villarreal	
+16:00
+Real Valladolid</p>	<br>
+<p style="color: blue">Sunday 8th November</p> <br>
+<p>Atletico Madrid	<br>
+16:00
+Cadiz	<br>
+Barcelona	
+16:00
+Real Betis	<br>
+Elche	
+16:00
+Celta Vigo	<br>
+Getafe	
+16:00
+Villarreal	<br>
+Levante	
+16:00
+Alaves	<br>
+Real Sociedad	
+16:00
+Granada	<br>
+Real Valladolid	
+16:00
+Athletic Bilbao	<br>
+SD Huesca	
+16:00
+Eibar	<br>
+Sevilla	
+16:00
+Osasuna	<br>
+Valencia	
+16:00
+Real Madrid</p>	<br>
+<p style="color: blue">Sunday 22nd November</p> <br>
+<p>Alaves	
+16:00
+Valencia <br>	
+Athletic Bilbao	
+16:00
+Real Betis	<br>
+Atletico Madrid	
+16:00
+Barcelona	<br>
+Cadiz	
+16:00
+Real Sociedad	<br>
+Eibar	
+16:00
+Getafe	<br>
+Granada	
+16:00
+Real Valladolid	<br>
+Levante	
+16:00
+Elche	<br>
+Osasuna	
+16:00
+SD Huesca  <br>	
+Sevilla	
+16:00
+Celta Vigo	<br>
+Villarreal	
+16:00
+Real Madrid</p>	<br>
+<p style="color: blue">Sunday 29th November</p> <br>
+<p>Barcelona	
+16:00
+Osasuna	<br>
+Celta Vigo	
+16:00
+Granada	<br>
+Elche	
+16:00
+Cadiz	<br>
+Getafe	
+16:00
+Athletic Bilbao	<br>
+Real Betis	
+16:00
+Eibar	<br>
+Real Madrid	
+16:00
+Alaves	<br>
+Real Sociedad	
+16:00
+Villarreal	<br>
+Real Valladolid	
+16:00
+Levante	<br>
+SD Huesca	
+16:00
+Sevilla	<br>
+Valencia	
+16:00
+Atletico Madrid<p>	<br>
+<h3 style="color: red">December 2020 </h3> <br>
+<p style="color: blue">Sunday 6th December</p> <br>
+<p>Alaves	
+16:00
+Real Sociedad  <br>	
+Athletic Bilbao	
+16:00
+Celta Vigo	<br>
+Atletico Madrid	
+16:00
+Real Valladolid	<br>
+Cadiz	
+16:00
+Barcelona	<br>
+Eibar	
+16:00
+Valencia	<br>
+Granada	
+16:00
+SD Huesca	<br>
+Levante	
+16:00
+Getafe	<br>
+Osasuna	
+16:00
+Real Betis	<br>
+Sevilla	
+16:00
+Real Madrid	<br>
+Villarreal	
+16:00
+Elche</p>	<br>
+<p style="color: blue">Sunday 13th December</p> <br>
+<p>Barcelona	
+16:00
+Levante	<br>
+Celta Vigo	
+16:00
+Cadiz  <br>	
+Elche	
+16:00
+Granada	<br>
+Getafe	
+16:00
+Sevilla	<br>
+Real Betis	
+16:00
+Villarreal	<br>
+Real Madrid	
+16:00
+Atletico Madrid	<br>
+Real Sociedad	
+16:00
+Eibar	<br>
+Real Valladolid	
+16:00
+Osasuna	<br>
+SD Huesca	
+16:00
+Alaves	<br>
+Valencia	
+16:00
+Athletic Bilbao	</p><br>
+<p style="color: blue">Sunday 20th December</p> <br>
+<p>Athletic Bilbao	
+16:00
+SD Huesca <br>	
+Atletico Madrid	
+16:00
+Elche <br>	
+Barcelona	
+16:00
+Valencia <br>	
+Cadiz	
+16:00
+Getafe	<br>
+Celta Vigo	
+16:00
+Alaves	<br>
+Eibar	
+16:00
+Real Madrid	<br>
+Granada	
+16:00
+Real Betis <br>	
+Levante	
+16:00
+Real Sociedad	<br>
+Osasuna	
+16:00
+Villarreal	<br>
+Sevilla	
+16:00
+Real Valladolid </p>	<br>
+<p style="color: blue">Wednesday 23rd December</p>  <br>
+<p>Alaves	
+20:00
+Eibar  <br>	
+Elche	
+20:00
+Osasuna	<br>
+Getafe	
+20:00
+Celta Vigo	<br>
+Real Betis	
+20:00
+Cadiz	<br>
+Real Madrid	
+20:00
+Granada	<br>
+Real Sociedad	
+20:00
+Atletico Madrid	<br>
+Real Valladolid	
+20:00
+Barcelona	<br>
+SD Huesca	
+20:00
+Levante	<br>
+Valencia	
+20:00
+Sevilla	<br>
+Villarreal	
+20:00
+Athletic Bilbao</p>	<br>
+<p style="color: blue">Wednesday 30th December</p> <br>
+<p>Athletic Bilbao	
+20:00
+Real Sociedad	<br>
+Atletico Madrid	
+20:00
+Getafe	<br>
+Barcelona	
+20:00
+Eibar <br>	
+Cadiz	
+20:00
+Real Valladolid	<br>
+Celta Vigo	
+20:00
+SD Huesca <br>	
+Elche	
+20:00
+Real Madrid	<br>
+Granada	
+20:00
+Valencia	<br>
+Levante	
+20:00
+Real Betis	<br>
+Osasuna	
+20:00
+Alaves	<br>
+Sevilla	
+20:00
+Villarreal</p>	<br>
+<h3 style="color: red">January 2021 </h3> <br>
+<p>Sunday 3rd January</p>  <br>
+<p>Alaves	
+16:00
+Atletico Madrid	<br>
+Athletic Bilbao	
+16:00
+Elche	<br>
+Eibar	
+16:00
+Granada	<br>
+Getafe	
+16:00
+Real Valladolid	<br>
+Real Betis	
+16:00
+Sevilla	<br>
+Real Madrid	
+16:00
+Celta Vigo	<br>
+Real Sociedad	
+16:00
+Osasuna	<br>
+SD Huesca	
+16:00
+Barcelona <br>	
+Valencia	
+16:00
+Cadiz	<br>
+Villarreal	
+16:00
+Levante</p>	<br>
+<p style="color: blue">Wednesday 6th January </p> <br>
+<p>Athletic Bilbao	
+20:00
+Barcelona	<br>
+Sunday 10th January <br>
+Atletico Madrid	
+16:00
+Athletic Bilbao	<br>
+Cadiz	
+16:00
+Alaves <br>	
+Celta Vigo	
+16:00
+Villarreal	<br>
+Elche	
+16:00
+Getafe	<br>
+Granada	
+16:00
+Barcelona	<br>
+Levante	
+16:00
+Eibar	<br>
+Osasuna	
+16:00
+Real Madrid	<br>
+Real Valladolid	
+16:00
+Valencia <br>	
+SD Huesca	
+16:00
+Real Betis	<br>
+Sevilla	
+16:00
+Real Sociedad</p>	<br>
+<p style="color: blue">Tuesday 12th January</p> <br>
+<p>Atletico Madrid	
+20:00
+Sevilla	<br>
+Wednesday 20th January <br>
+Alaves	
+20:00
+Sevilla	<br>
+Barcelona	
+20:00
+Real Sociedad	<br>
+Cadiz	
+20:00
+Levante	<br>
+Eibar	
+20:00
+Atletico Madrid	<br>
+Getafe	
+20:00
+SD Huesca	<br>
+Real Betis	
+20:00
+Celta Vigo	<br>
+Real Madrid	
+20:00
+Athletic Bilbao	<br>
+Real Valladolid	
+20:00
+Elche	<br>
+Valencia	
+20:00
+Osasuna	<br>
+Villarreal	
+20:00
+Granada </p>	<br>
+<p style="color: blue">Sunday 24th January</p> <br>
+<p>Alaves	
+16:00
+Real Madrid	<br>
+Athletic Bilbao	
+16:00
+Getafe	<br>
+Atletico Madrid	
+16:00
+Valencia <br>	
+Celta Vigo	
+16:00
+Eibar	<br>
+Elche	
+16:00
+Barcelona	<br>
+Levante	
+16:00
+Real Valladolid	<br>
+Osasuna	
+16:00
+Granada	<br>
+Real Sociedad	
+16:00
+Real Betis	<br>
+SD Huesca	
+16:00
+Villarreal	<br>
+Sevilla	
+16:00
+Cadiz</p></p> <br>
+</div>
+{% endblock content %}
+ 
+
+
+
+

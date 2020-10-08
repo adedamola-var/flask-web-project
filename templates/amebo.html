@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css"href="{{ url_for('static', filename='color.css') }}">
+    <link rel="stylesheet" type="text/css" href="color.css">
+    
+    
+	<title>laliga page</title>
+</head>
+<body>
+    <!--<div class="navbar-nav">
+              <a class="nav-item nav-link" href="#">Login</a>
+              <a class="nav-item nav-link" href="#">Register</a>
+            </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                 {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                      {{ message }}
+                    </div>
+                 {% endfor %}
+              {% endif %}
+          {% endwith %}-->
+    {% block content %}{% endblock %}
+
+<div class="nav">
+	<ul>
+		<li><a href="{{url_for('home') }}">home</a></li>
+	    
+
+		<li><a href="{{url_for('about') }}">about</a></li>
+	    
+
+		<li><a>top</a>
+		    <ul>	
+                <li><a href="{{url_for('goal') }}">goal</a></li> 
+                <li><a href="{{url_for('assist') }}">assist</a></li>
+                <li><a href="{{url_for('dribbles') }}">Dribbles</a></li>
+                <li><a href="{{url_for('redcard') }}">red card</a></li>
+                <li><a href="{{url_for('yellowcard') }}">yellow card</a></li>
+            </ul>
+        </li>
+
+
+        <li><a href="{{url_for('table') }}">table</a></li> 
+    
+        <li><a href="{{url_for('injuries') }}">injuries</a></li>
+        <li><a href="{{url_for('register') }}">Sign up</a></li> 
+        <li><a href="{{url_for('login') }}">Login</a></li> 
+
+
+	 </ul>
+
+</div>
+<button onclick="toggleNav()" style="float:left; position: fixed; top:0; color: #000033; background-color: white">Open/Close</button>
+    <div class="navbar">
+        <a href="#" class="navbar__link">
+            <span class="material-icons">Home</span>
+        </a>
+
+        <a href="#" class="navbar__link">
+            <span class="material-icons">Photos</span>
+        </a>
+
+        <a href="#" class="navbar__link">
+            <span class="material-icons">Results</span>
+        </a>
+
+        <a href="#" class="navbar__link">
+            <span class="material-icons">Logout</span>
+        </a>
+        
+    </div>
+
+ 
+
+     <script>
+        function toggleNav(){
+            document.querySelector(".navbar").classList.toggle("nav--open");
+        }
+     </script>
+     
+
+    <div class="container">
+		<h1>LA LIGA</h1>
+		<h3>We are coming.</h3>
+
+		<div class="count">
+			<div class="countdown">
+			<span id="days">00</span>
+			 DAYS	
+            </div>
+
+            <div class="countdown">
+			<span id="hours">00</span>
+			 HOURS	
+            </div>
+
+            <div class="countdown">
+			<span id="minutes">00</span>
+			 MINUTES	
+            </div>
+            <div class="countdown">
+			<span id="seconds">00</span>
+			 SECONDS	
+            </div>
+			
+		</div>
+
+		
+	</div>
+	<script>
+	 var count = new Date("12 SEPTEMBER,2020 00:00:00").getTime();
+	 var x = setInterval(function(){
+     var now = new Date().getTime();
+     var d = count - now;
+
+     var days = Math.floor(d/(1000*60*60*24));
+     var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+     var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+     var seconds = Math.floor((d%(1000*60))/1000);
+
+     document.getElementById("days").innerHTML = days;
+     document.getElementById("hours").innerHTML = hours;
+     document.getElementById("minutes").innerHTML = minutes;
+     document.getElementById("seconds").innerHTML = seconds;
+
+     if (d <= 0) {
+     clearInterval(x);
+      }
+
+	 },1000); 
+    </script>
+	
+
+</body>
+</html>

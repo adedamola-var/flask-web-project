@@ -1,0 +1,74 @@
+{% extends "amebo.html" %}
+{% block content %}
+<style>
+.pon{
+	text-align: center;
+	transform: translate(0%,50%);
+	font-size: 20px;
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	left: 600px;
+	background:#000033;
+	border-radius: 24px;
+}
+.pon input[type ="text"],.pon input[type = "password"]{
+
+	border:0;
+	background:none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border:2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline:white;
+	border-radius: 24px;
+	transition: 0,45s;
+}
+.pon input[type ="text"]:hover,.pon input[type = "password"]:hover{
+	background-color: white;
+}
+
+.pon input[type = "submit"]{
+	border:0;
+	background:none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border:2px solid #3498db;
+	padding: 14px 10px;
+	width: 100px;
+	outline:white;
+	border-radius: 50px;
+	transition: 0,45s;
+	color: white;
+}
+.pon input[type = "submit"]:hover{
+  background:#669900
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+</style>
+<body>
+	<div class="pon">
+		<h1 style="color: white">SIGN UP</h1>
+    <p> <form  action="/" method="post">
+      	<input type="text" name="name" placeholder="Username">
+      	<input type="password" name="pass" placeholder="Password" >
+      	<input type="password" name="pass1" placeholder="Confirm Password" >
+      	<input type="submit" name="submit" value="Sign Up">
+      </form>
+  </p>
+</div>
+</body>  
+{% endblock content %}
+ 
+
+
+
+
